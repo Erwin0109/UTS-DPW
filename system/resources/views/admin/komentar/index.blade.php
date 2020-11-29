@@ -29,7 +29,7 @@
 								@include('admin.template.utils.delete', ['url' => url('admin/komentar', $komentar->id)])
 								</div>
 							</td>
-							<td>{{$komentar->artikel->nama}}</td>
+							<td>{{$komentar->artikel->judul}}</td>
 							<td>{{$komentar->nama}}</td>
 							<td>{{$komentar->komentar}}</td>
 						 </tr>

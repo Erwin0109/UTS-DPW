@@ -11,13 +11,12 @@
 				<div class="card-body">
 					<form action="{{url('admin/komentar')}}" method="post">
 						@csrf
-
 					<div class="form-group">
 	                  <label>Artikel</label>
 	                  <select name="id_artikel" class="form-control select2" style="width: 100%;">
 	                    <option selected="selected">Pilih Artikel</option>
 	                    	@foreach($list_artikel as $artikel)
-	                    		<option value="{{$artikel->id}}">{{$artikel->nama}}</option>
+	                    		<option value="{{$artikel->id}}">{{$artikel->judul}}</option>
 	                    	@endforeach	
 	                  </select>
 	                </div>
@@ -29,7 +28,7 @@
 
 					<div class="form-group">
 						<label for="" class="control-label">Komentar</label>
-						<textarea name="Komentar" class="form-control"></textarea>
+						<textarea name="komentar" class="form-control"></textarea>
 					</div>
 
 

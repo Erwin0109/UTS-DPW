@@ -27,7 +27,7 @@ class KomentarController extends Controller
 		$data->save();
 
 		return redirect('admin/komentar')->with('success','Data Berhasil Ditambahkan');
-		//dd(request()->all());
+		dd(request()->all());
 	}
 
 	function show(Komentar $komentar){

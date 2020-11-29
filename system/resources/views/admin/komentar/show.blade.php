@@ -11,11 +11,12 @@
 				<div class="card-body">
 					<table class="table">
 						<tbody>
-							<h3><b>Komentar Dari : </b>{{$komentar->nama}}</h3>
-							<b>Artikel : {{$komentar->artikel->nama}}</b><hr>
-							<b>Komentar :</b>
+							<h3><b>Komentar : </b>{{nl2br($komentar->komentar)}}</h3>
+							<b>Komentar Dari : {{$komentar->nama}}</b>
+							<hr>
+							<b>Artikel : {{$komentar->artikel->judul}}</b>
 							<p>
-								{{nl2br($komentar->komentar)}}
+								
 							</p>
 						</tbody>
 					</table>

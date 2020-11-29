@@ -23,6 +23,6 @@ class Komentar extends Model
    	}
 
    	function respon(){
-   		return $this->hasMany(Respon::class, 'id_respon');
+   		return $this->hasMany(Respon::class, 'id_komentar');
    	}   	
 }

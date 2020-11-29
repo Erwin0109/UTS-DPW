@@ -13,9 +13,9 @@
 						@csrf
 						@method("PUT")
 
-	                <div class="form-group">
+					<div class="form-group">
 						<label for="" class="control-label">Nama Artikel</label>
-						<input type="text" class="form-control" name="nama" value="{{$komentar->artikel->nama}}" readonly="">
+						<input type="text" class="form-control" name="nama" value="{{$komentar->artikel->judul}}" readonly="">
 					</div>
 
 					<div class="form-group">

@@ -95,46 +95,24 @@
                                     <a href="#" class="btn btn-primary btn-sm">Balas</a>
                                 </div>
                             </div>
-                            <div class="media">
-                                <a class="media-left" href="#">
-                                    <img src="{{url('public')}}/client/upload/people_11.jpeg" alt="" class="img-circle">
-                                </a>
-                                <div class="media-body">
-
-                                    <h4 class="media-heading user_name">Amron Mukodomper</h4>
-                                    <p>Mulut Anda Kotor !!!</p>
-
-                                    <a href="#" class="btn btn-primary btn-sm">Balas</a>
-                                </div>
-                            </div>
                         </div>
                     </div><!-- end content -->
 
                     <div class="content boxed-comment clearfix">
                         <h3 class="small-title">Tinggalkan Komentar</h3>
-                        <form class="big-contact-form">
+                        <form class="big-contact-form" action="{{url('admin/komentar')}}" method="post">
+                            @csrf
                             <div class="col-md-4">
                                 <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Full Name">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                <input type="text" class="form-control" name="website" placeholder="Website">
+                                <input type="text" class="form-control" name="nama" placeholder="nama">
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <textarea placeholder="Your message" class="form-control"></textarea>
+                                <textarea placeholder="Tulis Komentar" class="form-control"></textarea>
                                 <button class="btn btn-primary" type="submit">KIRIM KOMENTAR</button>
                             </div>
                         </form>
                     </div><!-- end content -->
-
                 </div>
                 <!-- end col -->
                 @include('client.template.section.sidebar')
