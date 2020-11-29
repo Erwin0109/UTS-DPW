@@ -27,7 +27,7 @@
                         <div class="blog-wrapper clearfix">
                             <div class="blog-meta">
                                 <small><a href="#">One Day One Coding</a></small>
-                                <h3><a href="blog-single.html" title="">{{$artikel->judul}}</a></h3> 
+                                <h3><a href="{{url('artikel')}}" title="">{{$artikel->judul}}</a></h3> 
                                 <ul class="list-inline">
                                     <li><span>Penulis by</span><a href="#">{{$artikel->seller->nama}}</a></li>
                                 </ul>

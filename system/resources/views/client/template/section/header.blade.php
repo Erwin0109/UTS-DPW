@@ -59,7 +59,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Profil</a></li>
                             <li><a href="#">Setting</a></li>
-                            <li><a href="#">Log Out</a></li>
+                            <li><a href="{{'login'}}">Log Out</a></li>
                         </ul>
                     </li>
                 </ul>
